@@ -30,13 +30,13 @@ export default function NavBar(props: NavBarProps) {
         dark ? setDark(false) : setDark(true);
     }
 
-    const defaultBack = "bg-white text-black";
+    const defaultBack = "bg-slate-100 text-slate-800";
     const darkBack = "bg-slate-900 text-white";
 
     return(
         <div>
 
-        <motion.div  className={`w-full h-14 flex justify-between items-center mt-4 px-4 md:px-20 fixed ${dark ? defaultBack : darkBack}`} >
+        <motion.div  className={`w-full h-24 flex justify-between items-center pt-3 px-4 md:px-20 fixed ${dark ? defaultBack : darkBack}`} >
             <div className="md:scale-150 hover:cursor-pointer">
                 {
                     dark ?
@@ -93,14 +93,14 @@ export default function NavBar(props: NavBarProps) {
                         transition={{ ease: "easeOut", duration: 0.4 }}
                         
                         className={`fixed top-0 right-0 w-[70vw] h-screen shadow-lg
-                            ${dark ? defaultBack : "bg-slate-700 shadow-lg shadow-slate-700" }`}>
+                            ${dark ? defaultBack : "bg-slate-800 shadow-lg shadow-slate-700" }`}>
                             <div className="px-10 pt-4 flex justify-between">
                                 <p></p>
                                 <motion.button animate={{
                                     scale: [1, 1.3, 1, 1],
                                     rotate: [90, 0, 270, 90],
                                     borderRadius: ["20%", "20%", "20%", "20%", "20%"],
-                                }} onClick={activarMenu} className="rotate-90 text-2xl mt-2">|||</motion.button>
+                                }} onClick={activarMenu} className="rotate-90 text-2xl mt-5">|||</motion.button>
                             </div> 
                             <div className="px-10 space-y-6 mt-4">
                                 <p className="h-10  text-lg font-bold hover:cursor-pointer hover:bg-neutral-200 p-2 rounded-md hover:text-neutral-700">Sobre Nosotros</p>
