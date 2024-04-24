@@ -112,7 +112,7 @@ export default function NavBar(props: NavBarProps) {
                 }
             </motion.div>
         </motion.div>
-        <div className={`w-full h-full ${dark ? defaultBack : darkBack}`}>
+        <div className={` ${dark ? defaultBack : darkBack}`}>
             {contenido}
         </div>
     </div>
