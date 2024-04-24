@@ -3,7 +3,7 @@ import LogoMain from "@/public/hero-image-simple-homepage.png";
 
 export default function Home() {
   return (
-    <main className="h-full">
+    <main className="h-full lg:w-screen">
     <div className="flex flex-col-reverse h-fit lg:flex lg:flex-row min-h-full px-10 lg:px-40 lg:justify-between lg:items-center">
       <div className="w-full lg:w-[35vw] space-y-10 lg:mt-20">
         <p className="font-bold text-md lg:text-lg">😎 Una forma simple de comunicarse</p>
