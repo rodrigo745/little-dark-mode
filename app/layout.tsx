@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   
   return (
-    <html lang="es" className="bg-slate-100">
+    <html lang="es">
       <body className={poppins.className}>
           <NavBar hijos={children}/>
       </body>
